@@ -1,0 +1,27 @@
+.navlist {
+    grid-area: navlist;
+    background-color:  rgb(167, 214, 255);
+   
+  }
+  
+  .navlist div {
+    padding: 5px 15px;
+  }
+
+  .navlist div:hover {
+    background-color:  rgb(117, 158, 193);
+  }
+  
+  .linestyle{
+    text-transform: uppercase;
+        font-size: 15px;
+        font-weight: 300;
+        color: #ffffff;
+        text-decoration: none;
+        line-height: 1.5;
+        margin-bottom: 5px;
+    }
+
+    .linestyle:hover{
+        text-decoration: underline;
+    }

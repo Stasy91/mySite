@@ -1,0 +1,23 @@
+ul li {
+list-style-type: georgian;
+}
+
+.container {
+  width: 100%;
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: auto;
+}
+
+.appwrapper {
+  display: grid;
+  padding: 15px;
+ grid-template-areas:
+"header header "
+"navlist profile";
+ grid-template-rows: 100px 1fr;
+  grid-template-columns: 2fr 10fr;
+  grid-gap: 0px;
+}
+
+
