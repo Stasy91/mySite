@@ -1,29 +1,23 @@
 import React from "react";
-import "./NavList.css"
+import s from "./NavList.module.css";
 
 const NavList = () => {
-    return   <nav className="navlist">
-    <div>
-      <a className="linestyle" href="">
-        Profile
-      </a>
-    </div>
-    <div>
-      <a className="linestyle" href="">
-        News
-      </a>
-    </div>
-    <div>
-      <a className="linestyle" href="">
-        Message
-      </a>
-    </div>
-    <div>
-      <a className="linestyle" href="">
-        Contacts
-      </a>
-    </div>
-  </nav>
-}
+  return (
+    <nav className={s.navlist}>
+      <div className={s.linestyle}>
+        <a> Profile </a>
+      </div>
+      <div className={s.linestyle}>
+        <a>News</a>
+      </div>
+      <div className={s.linestyle}>
+        <a>Message</a>
+      </div>
+      <div className={s.linestyle}>
+        <a>Contacts</a>
+      </div>
+    </nav>
+  );
+};
 
-export default NavList
+export default NavList;

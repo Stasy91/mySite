@@ -1,11 +1,13 @@
 import React from "react";
-import "./Profile.css"
+import s from "./Profile.module.css";
 
 const Profile = () => {
-    return     <div className="profile">
-    <div>
-      <img src="https://www.photosteklo.ru/wp-content/uploads/2020/10/6255.jpg"></img>
+  return (
+    <div className={s.profile}>
+      <div className="">
+        {/* <img src="https://www.photosteklo.ru/wp-content/uploads/2020/10/6255.jpg"></img> */}
+      </div>
     </div>
-  </div>
-}
-export default Profile
+  );
+};
+export default Profile;

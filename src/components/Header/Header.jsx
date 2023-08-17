@@ -1,13 +1,21 @@
 import React from "react";
-import "./Header.css"
+import s from "./Header.module.css";
+import Logo from "./Logo";
+import Navigation from "./Navigation/Navigation";
 
 const Header = () => {
-    return <header className="bighead">
-    <div>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/UOL_logo_old.png"></img>
-    </div>
-    <div className="textheader">Турагество бесконечного отдыха</div>
-  </header>
-}
+  return (
+    <header className={s.bighead}>
+      <div className="container">
+        <div className={s.header__inner}>
+          <a className={s.headerLogo} href="#">
+            <Logo />
+          </a>
+          <Navigation />
+        </div>
+      </div>
+    </header>
+  );
+};
 
-export default Header
+export default Header;

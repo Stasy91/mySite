@@ -6,12 +6,10 @@ import Profile from "./components/Profile/Profile";
 
 const App = () => {
   return (
-    <div className="container">
-      <div className="appwrapper">
-        <Header />
-        <NavList />
-        <Profile />
-      </div>
+    <div className="appwrapper">
+      <Header />
+      <NavList />
+      <Profile />
     </div>
   );
 };

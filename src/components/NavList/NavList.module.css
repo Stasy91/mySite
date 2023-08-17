@@ -1,7 +1,5 @@
 .navlist {
     grid-area: navlist;
-    background-color:  rgb(167, 214, 255);
-   
   }
   
   .navlist div {
@@ -9,14 +7,14 @@
   }
 
   .navlist div:hover {
-    background-color:  rgb(117, 158, 193);
+    background-color:  rgb(171, 171, 171);
   }
   
   .linestyle{
-    text-transform: uppercase;
+        font-family: 'Manrope';
         font-size: 15px;
-        font-weight: 300;
-        color: #ffffff;
+        font-weight: 600;
+        color: #000000;
         text-decoration: none;
         line-height: 1.5;
         margin-bottom: 5px;

@@ -1,0 +1,16 @@
+.navigation{
+        margin-left: 13%;
+        font-size: 15px;   
+        font-family: 'Manrope';
+        font-weight: 600;
+}
+
+.nav__link {
+    display: line-block;
+    vertical-align: top;
+    margin: 0 15px;
+    transition: color 1.s linear;
+    position: relative;
+    text-decoration: none;
+    color: #989b9f;
+}
