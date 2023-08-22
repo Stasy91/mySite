@@ -1,0 +1,26 @@
+.postReady {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    width: 865px;
+    background-color: #fefefe9c;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.postReady img {
+    flex-wrap: wrap;
+    width: 56px;
+    height: 56px;
+    border-radius: 23px;
+    margin: 20px;
+}
+
+.postReadyText{
+    margin-top: 5px;
+    font-family: 'Manrope';
+    font-size: 15px;
+    line-height: 1.5;
+    color: rgb(30, 29, 29);
+}
