@@ -2,6 +2,7 @@ import React from "react";
 import s from "./Profile.module.css";
 import MyPosts from "./MyPosts/MyPosts";
 import Post from "./MyPosts/Post/Post";
+import CouterLike from "./MyPosts/Post/CouterLike/CouterLike";
 
 const Profile = () => {
   return (
@@ -27,7 +28,7 @@ const Profile = () => {
         Товарищи! начало повседневной работы по формированию позиции требуют
         определения и уточнения форм развития. Задача организации, в особенности
         же укрепление и развитие структуры в значительной степени обуславливает
-        создание систем массового участия.{" "}
+        создание систем массового участия.
       </Post>
     </div>
   );

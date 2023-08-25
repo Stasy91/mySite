@@ -1,0 +1,18 @@
+.styleLike {
+    text-align: center;
+    opacity: 0.4;
+    cursor: pointer;
+    margin: 5px;
+    width: 20px;
+    fill: rgb(44, 54, 63);
+}
+
+.styleLike:hover {
+    transition: 0.8s;
+    transform: scale(1.2);
+    font-size: transparent;
+}
+
+.styleLike.active{
+
+}
