@@ -1,16 +1,29 @@
+
 .navlist {
     grid-area: navlist;
   }
-  
-  .navlist div {
-    padding: 5px 15px;
-  }
 
-  .navlist div:hover {
-    background-color:  rgb(171, 171, 171);
-  }
-  
-  .linestyle{
+.designBar {
+  float: right;
+  top: 30px;
+  padding: 15px;
+  min-width: 265px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+}
+.avatar img{
+  position: relative;
+  max-width: 140px;
+  top: -110px;
+  left: 22%;
+  border-radius: 10px;
+  z-index: 2;
+  margin-bottom: -100px;
+}
+
+
+.linestyle{
+        padding: 5px 15px;
         font-family: 'Manrope';
         font-size: 15px;
         font-weight: 600;
@@ -18,8 +31,10 @@
         text-decoration: none;
         line-height: 1.5;
         margin-bottom: 5px;
-    }
+        cursor: pointer;
+}
 
-    .linestyle:hover{
-        text-decoration: underline;
-    }
+.linestyle:hover{
+        background-color:  rgb(217, 217, 217);
+        border-radius: 2px;
+}

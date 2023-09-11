@@ -6,16 +6,19 @@
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000;
+    z-index: 1;
   }
 
-  .header__inner {
-    display: flex;
-    justify-content: flex-end;
-    margin-left: auto;
-    align-items: center;
+.header__inner {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
 }
-  
+
+
   .headerLogo{
     width: 200px;  
   }
