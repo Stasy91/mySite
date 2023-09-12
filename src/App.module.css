@@ -1,6 +1,8 @@
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  background: url(../src/Img/backgtound-color-grid.jpg) center no-repeat;
+  background-size: cover;
   background-color: #e4e4e2;
 }
 
@@ -17,17 +19,17 @@ body {
 
 .appwrapper {
 
-  background: url(../src/Img/backgtound-color-grid.jpg) center no-repeat;
-  background-size: cover;
   position: relative;
 
   display: grid;
   grid-template-areas:
-  "header header "
-  "navlist profile";
+  "h h "
+  "n c";
   grid-template-rows: 100px 1fr;
   grid-template-columns: 2fr 1230px;
   grid-gap: 30px;
 }
 
-
+.appwrapper_content {
+  grid-area: c;
+}

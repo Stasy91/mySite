@@ -1,6 +1,6 @@
 
 .navlist {
-    grid-area: navlist;
+    grid-area: n;
   }
 
 .designBar {
@@ -11,6 +11,7 @@
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 10px;
 }
+
 .avatar img{
   position: relative;
   max-width: 140px;
@@ -19,22 +20,37 @@
   border-radius: 10px;
   z-index: 2;
   margin-bottom: -100px;
+  cursor: pointer;
+}
+
+.avatar img:hover {
+  box-shadow: 1px 1px 5px 2px #e5e5e56c;
 }
 
 
-.linestyle{
+.lineStyle  {
+        text-decoration: none;
         padding: 5px 15px;
         font-family: 'Manrope';
         font-size: 15px;
         font-weight: 600;
-        color: #000000;
-        text-decoration: none;
+        color: #5b5b5b;
         line-height: 1.5;
         margin-bottom: 5px;
-        cursor: pointer;
+        cursor: pointer;       
+}
+.lineStyle a{
+  color: #5b5b5b;
+  text-decoration: none;
 }
 
-.linestyle:hover{
-        background-color:  rgb(217, 217, 217);
-        border-radius: 2px;
+.lineStyle:hover{
+  background-color:  rgb(241, 240, 240);
+  border-radius: 2px;
 }
+
+.lineStyle a.active {
+  color: black;
+  font-weight: 800;
+}
+

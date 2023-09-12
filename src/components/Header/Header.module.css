@@ -1,5 +1,5 @@
    .bighead{
-    grid-area: header;
+    grid-area: h;
     background-color: #f7f7f7;
     padding-top: 2.5%;
     width: 100%;
@@ -11,13 +11,11 @@
 
 .header__inner {
   display: flex;
-  justify-content: flex-end;
-  margin-left: auto;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: space-between;
+    justify-content: center;
+    margin-left: 22%;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
-
 
   .headerLogo{
     width: 200px;  
