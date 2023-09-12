@@ -1,18 +1,7 @@
 
-.profile{
-    grid-area: profile;
-  }
-
-  .profile img {
-   width: 80%;
-   display: block;
-   margin-left: auto;
-   margin-right: auto 
-  }
-  
   .pinnedPost {
     display: block;
-    width: 865px;
+    width: 825px;
     height: 230px;
     background-color: rgba(255, 255, 255, 0.9);
     padding: 40px 20px;
