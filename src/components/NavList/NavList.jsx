@@ -1,6 +1,14 @@
 import React from "react";
 import s from "./NavList.module.css";
 import { NavLink } from "react-router-dom";
+import NavListItem from "./NavListItem/NavListItem";
+
+const NavItem = [
+  { to: "/profile", children: "Профиль" },
+  { to: "/dialogs/", children: "Сообщения" },
+  { to: "/news", children: "Новости" },
+  { to: "/friends", children: "Друзья" },
+];
 
 const NavList = () => {
   return (
@@ -9,45 +17,11 @@ const NavList = () => {
         <div className={s.avatar}>
           <img src="https://mir-avatarok.3dn.ru/_si/0/03342719.jpg"></img>
         </div>
-        <div className={s.lineStyle}>
-          <NavLink
-            to="/profile"
-            className={(dataNavList) =>
-              dataNavList.isActive ? `${s.lineStyle} ${s.active}` : s.lineStyle
-            }
-          >
-            Профиль
-          </NavLink>
-        </div>
-        <div className={`${s.lineStyle} ${s.active}`}>
-          <NavLink
-            to="/dialogs"
-            className={(dataNavList) =>
-              dataNavList.isActive ? `${s.lineStyle} ${s.active}` : s.lineStyle
-            }
-          >
-            Сообщения
-          </NavLink>
-        </div>
-        <div className={s.lineStyle}>
-          <NavLink
-            to="/News"
-            className={(dataNavList) =>
-              dataNavList.isActive ? `${s.lineStyle} ${s.active}` : s.lineStyle
-            }
-          >
-            Новости
-          </NavLink>
-        </div>
-        <div className={s.lineStyle}>
-          <NavLink
-            to="/Friends"
-            className={(dataNavList) =>
-              dataNavList.isActive ? `${s.lineStyle} ${s.active}` : s.lineStyle
-            }
-          >
-            Друзья
-          </NavLink>
+
+        <div className={s.designBarList}>
+          {NavItem.map((NavItem) => (
+            <NavListItem to={NavItem.to}>{NavItem.children}</NavListItem>
+          ))}
         </div>
       </div>
     </nav>

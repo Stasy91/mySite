@@ -1,0 +1,25 @@
+.lineStyle  {
+    text-decoration: none;
+    padding: 5px 15px;
+    font-family: 'Manrope';
+    font-size: 15px;
+    font-weight: 600;
+    color: #5b5b5b;
+    line-height: 1.5;
+    margin-bottom: 5px;
+    cursor: pointer;       
+}
+.lineStyle a{
+color: #5b5b5b;
+text-decoration: none;
+}
+
+.lineStyle:hover{
+background-color:  rgb(241, 240, 240);
+border-radius: 2px;
+}
+
+active {
+color: black;
+font-weight: 800;
+}

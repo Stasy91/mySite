@@ -14,7 +14,7 @@ const App = () => {
         <NavList />
         <div className={s.appwrapper_content}>
           <Routes>
-            <Route path="/dialogs" element={<Dialogs />} />
+            <Route path="/dialogs/*" element={<Dialogs />} />
             <Route path="/profile" element={<Profile />} />
           </Routes>
         </div>
