@@ -16,4 +16,38 @@
     border-radius: 5px;
 }
 
+.dialogMessages {
+    background: #ffff;
+    border-radius: 5px;
+    width: 440px;
+    padding: 15px 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    position: relative;
+    max-height: 600px;
+    overflow-y: scroll;
 
+}
+
+.messageUser {
+    background: rgb(35, 35, 35);
+    border-radius: 3px;
+    color: #ffff;
+    display: block;
+    float: right;
+    padding: 5px 15px;
+    margin: 15px 15px 0px 0px;
+    max-width: 300px;
+}
+
+.message {
+    background: rgb(229, 229, 229);
+    border-radius: 3px;
+    color: rgb(35, 35, 35);
+    float: left;
+    display: block;
+    padding: 5px 15px;
+    margin: 0 15px;
+    max-width: 300px;
+}
