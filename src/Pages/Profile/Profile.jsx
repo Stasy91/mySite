@@ -1,10 +1,9 @@
 import React from "react";
-import s from "./Profile.module.css";
 import MyPosts from "./MyPosts/MyPosts";
 import Post from "./MyPosts/Post/Post";
 import PinnedPost from "./MyPosts/PinnedPost/PinnedPost";
 
-const PostData = [
+const PostsData = [
   {
     children:
       "Разнообразный и богатый опыт сложившаяся структура организации позволяет выполнять важные задания по разработке дальнейших направлений развития.",
@@ -20,8 +19,7 @@ const Profile = () => {
     <div>
       <PinnedPost />
       <MyPosts />
-
-      {PostData.map((item) => (
+      {PostsData.map((item) => (
         <Post>{item.children}</Post>
       ))}
     </div>
