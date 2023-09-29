@@ -1,7 +1,7 @@
 import React from "react";
 import s from "./MyPosts.module.css";
-import Textarea from "../../Kit/Textarea/Textarea";
-import Button from "../../Kit/Button/Button";
+import Textarea from "../../../components/Kit/Textarea/Textarea";
+import Button from "../../../components/Kit/Button/Button";
 
 const MyPosts = () => {
   return (

@@ -2,8 +2,8 @@ import React from "react";
 import s from "./App.module.css";
 import Header from "./components/Header/Header";
 import NavList from "./components/NavList/NavList";
-import Profile from "./components/Profile/Profile";
-import Dialogs from "./components/Dialogs/Dialogs";
+import Profile from "./Pages/Profile/Profile";
+import Dialogs from "./Pages/Dialogs/Dialogs";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const App = () => {
@@ -14,6 +14,7 @@ const App = () => {
         <NavList />
         <div className={s.appwrapper_content}>
           <Routes>
+            <Route path="/dialogs/:id" element={<Dialogs />} />
             <Route path="/dialogs/*" element={<Dialogs />} />
             <Route path="/profile" element={<Profile />} />
           </Routes>

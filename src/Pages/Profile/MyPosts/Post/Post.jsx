@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import s from "./Post.module.css";
-import Like from "../../../Kit/Like/Like";
 import CouterLike from "./CouterLike/CouterLike";
+import Like from "../../../../components/Kit/Like/Like";
 
 const Post = (props) => {
   const [count, setCount] = useState(0);
@@ -13,6 +13,7 @@ const Post = (props) => {
     <div className={s.postReady}>
       <img src="https://mir-avatarok.3dn.ru/_si/0/03342719.jpg" alt="" />
       <div className={s.postReadyText}>{props.children}</div>
+      {/* Счетчик лайков */}
       <div>
         <div>
           <CouterLike counter={count} />

@@ -4,8 +4,8 @@ body {
   background: url(../src/Img/backgtound-color-grid.jpg) center no-repeat;
   background-size: cover;
   background-color: #e4e4e2;
-  overflow-y: scroll;
   font-family: 'Manrope';
+  overflow-y: scroll;
 }
 
 .container{
