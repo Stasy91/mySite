@@ -2,22 +2,23 @@ import React from "react";
 import s from "./Dialogs.module.css";
 import Search from "../../components/Kit/Search/Search";
 import DiaolgsItem from "./DiaolgsItem/DiaolgsItem";
-import MessageFild from "./MessageFild/MessageFild";
-import DIALOG_DATA from "./DialogData/DIALOG_DATA";
+import MessageFild from "./MessageField/MessageField";
 
-const Dialogs = (props) => (
+const Dialogs = ({ dataDialog = [] }) => (
   <div className={s.dialogPage}>
     <div className={s.linkList}>
       <div className={s.serchModule}>
         <Search />
       </div>
-      {DIALOG_DATA.map((item) => (
-        <DiaolgsItem to={`/dialogs/${item.id}`} src={item.src}>
-          {item.children}
-        </DiaolgsItem>
+      {dataDialog.map((di) => (
+        <DiaolgsItem
+          to={`/dialogs/${di.id}`}
+          src={di.src}
+          name={di.name}
+        ></DiaolgsItem>
       ))}
     </div>
-    <MessageFild />
+    <MessageFild dataDialog={dataDialog} />
   </div>
 );
 

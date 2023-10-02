@@ -1,8 +1,6 @@
 import React from "react";
-import s from "./MessageFild.module.css";
+import s from "./MessageField.module.css";
 import DataRecipient from "./DataRecipient/DataRecipient";
-import { GetDialogById } from "../DialogData/DIALOG_DATA";
-import { useNavigate, useParams } from "react-router-dom";
 
 const MessageRecipient = (props) => {
   return (
@@ -20,10 +18,10 @@ const MessageUser = (props) => {
   );
 };
 
-const MessageFild = () => {
+const MessageField = ({ dataDialog }) => {
   return (
     <div>
-      <DataRecipient />
+      <DataRecipient dataDialog={dataDialog} />
       <div className={s.dialogMessages}>
         <MessageUser message="Дарова" />
         <MessageRecipient message="Привет" />
@@ -32,4 +30,4 @@ const MessageFild = () => {
   );
 };
 
-export default MessageFild;
+export default MessageField;

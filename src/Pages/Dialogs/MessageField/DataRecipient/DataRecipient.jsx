@@ -1,11 +1,13 @@
 import React from "react";
 import s from "./DataRecipient.module.css";
-import DiaolgsItem from "../../DiaolgsItem/DiaolgsItem";
-import DialogData, { GetDialogById } from "../../DialogData/DIALOG_DATA";
 import { useParams } from "react-router-dom";
 
-const DataRecipient = () => {
+const DataRecipient = ({ dataDialog }) => {
   const { id } = useParams();
+
+  let GetDialogById = (id = "") => {
+    return dataDialog.find((i) => id == i.id);
+  };
 
   if (!GetDialogById(id)) {
     return <div className={s.DataRecipient}></div>;
@@ -13,7 +15,7 @@ const DataRecipient = () => {
   return (
     <div className={s.DataRecipient}>
       <img src={GetDialogById(id).src} />
-      <h4>{GetDialogById(id).children}</h4>
+      <h4>{GetDialogById(id).name}</h4>
     </div>
   );
 };
