@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import s from "./DiaolgsItem.module.css";
 
 // props={to src children}
-const defaultProps = { to: "", src: "", children: "" };
+const defaultProps = { to: "", src: "", name: "" };
 
 const DiaolgsItem = (props = defaultProps) => {
   return (
@@ -14,7 +14,7 @@ const DiaolgsItem = (props = defaultProps) => {
       }
     >
       <img src={props.src} alt="" />
-      {props.children}
+      {props.name}
     </NavLink>
   );
 };

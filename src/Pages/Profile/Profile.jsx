@@ -1,28 +1,19 @@
 import React from "react";
-import MyPosts from "./MyPosts/MyPosts";
-import Post from "./MyPosts/Post/Post";
-import PinnedPost from "./MyPosts/PinnedPost/PinnedPost";
+import NewPost from "./NewPost/NewPost";
+import Post from "./Post/Post";
+import PinnedPost from "./PinnedPost/PinnedPost";
 
-const PostsData = [
-  {
-    children:
-      "Разнообразный и богатый опыт сложившаяся структура организации позволяет выполнять важные задания по разработке дальнейших направлений развития.",
-  },
-  {
-    children:
-      "Не следует, однако забывать, что консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании существенных финансовых и административных условий.",
-  },
-];
-
-const Profile = () => {
+const Profile = (props) => {
   return (
     <div>
-      <PinnedPost />
-      <MyPosts />
-      {PostsData.map((item) => (
-        <Post>{item.children}</Post>
+      <PinnedPost profileInfo={props.profileInfo} />
+      <NewPost profileInfo={props.profileInfo} />
+      {props.posts.map((p) => (
+        <Post text={p.textInPost} profileInfo={props.profileInfo}></Post>
       ))}
     </div>
   );
 };
 export default Profile;
+
+let props = { posts: [], profileInfo: {} };

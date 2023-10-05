@@ -2,8 +2,7 @@ import React from "react";
 import s from "./Dialogs.module.css";
 import Search from "../../components/Kit/Search/Search";
 import DiaolgsItem from "./DiaolgsItem/DiaolgsItem";
-import MessageFild from "./MessageFild/MessageFild";
-import DIALOG_DATA from "./DialogData/DIALOG_DATA";
+import MessageFild from "./MessageField/MessageField";
 
 const Dialogs = (props) => (
   <div className={s.dialogPage}>
@@ -11,13 +10,16 @@ const Dialogs = (props) => (
       <div className={s.serchModule}>
         <Search />
       </div>
-      {DIALOG_DATA.map((item) => (
-        <DiaolgsItem to={`/dialogs/${item.id}`} src={item.src}>
-          {item.children}
-        </DiaolgsItem>
+      {props.usersInfo.map((u) => (
+        <DiaolgsItem
+          to={`/dialogs/${u.id}`}
+          src={u.src}
+          name={u.name}
+        ></DiaolgsItem>
       ))}
     </div>
-    <MessageFild />
+
+    <MessageFild usersInfo={props.usersInfo} />
   </div>
 );
 

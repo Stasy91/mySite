@@ -10,12 +10,12 @@ const NavItem = [
   { to: "/friends", children: "Друзья" },
 ];
 
-const NavList = () => {
+const NavList = (props) => {
   return (
     <nav className={s.navlist}>
       <div className={s.designBar}>
         <div className={s.avatar}>
-          <img src="https://mir-avatarok.3dn.ru/_si/0/03342719.jpg"></img>
+          <img src={props.profileInfo.src}></img>
         </div>
 
         <div className={s.designBarList}>

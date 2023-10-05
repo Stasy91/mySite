@@ -7,7 +7,7 @@ function Search() {
     <div className={s.searches}>
       <input
         type="text"
-        placeholder="Искать здесь..."
+        placeholder="Искать друга здесь..."
         className={s.searchBox}
       />
       <Button> Поиск </Button>
