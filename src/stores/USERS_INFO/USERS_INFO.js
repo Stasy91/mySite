@@ -1,4 +1,4 @@
-const DIALOG_DATA = [
+const USERS_INFO = [
   {
     id: 1,
     src: "https://ouch-cdn2.icons8.com/iaSvWx81YYzXgkdlhtQ4VVYi3fojJIC9MGKvMf1yGKs/rs:fit:368:368/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvNTY5/LzIyYWNhYTcwLTI4/OTAtNGUwZC04ZGFj/LTI2ZmFmZDJjNzY2/YS5wbmc.png",
@@ -42,4 +42,4 @@ const DIALOG_DATA = [
 //   return DIALOG_DATA.find((i) => id == i.id);
 // };
 
-export default DIALOG_DATA;
+export default USERS_INFO;

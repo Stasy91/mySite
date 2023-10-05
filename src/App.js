@@ -5,10 +5,11 @@ import NavList from "./components/NavList/NavList";
 import Profile from "./Pages/Profile/Profile";
 import Dialogs from "./Pages/Dialogs/Dialogs";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import DIALOG_DATA from "./stores/DialogData/DIALOG_DATA";
+import USERS_INFO from "./stores/USERS_INFO/USERS_INFO";
 import PROFILE_INFO from "./stores/PROFILE_INFO/PROFILE_INFO";
+import POSTS_DATA from "./stores/POSTS_DATA/POSTS_DATA";
 
-const App = (props) => {
+const App = () => {
   return (
     <BrowserRouter>
       <div className={s.appwrapper}>
@@ -18,16 +19,16 @@ const App = (props) => {
           <Routes>
             <Route
               path="/dialogs/:id"
-              element={<Dialogs dataDialog={DIALOG_DATA} />}
+              element={<Dialogs usersInfo={USERS_INFO} />}
             />
             <Route
               path="/dialogs/"
-              element={<Dialogs dataDialog={DIALOG_DATA} />}
+              element={<Dialogs usersInfo={USERS_INFO} />}
             />
             <Route
               path="/profile"
               element={
-                <Profile posts={props.posts} profileInfo={PROFILE_INFO} />
+                <Profile posts={POSTS_DATA} profileInfo={PROFILE_INFO} />
               }
             />
           </Routes>

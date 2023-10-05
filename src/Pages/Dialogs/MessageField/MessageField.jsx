@@ -1,6 +1,6 @@
 import React from "react";
 import s from "./MessageField.module.css";
-import DataRecipient from "./DataRecipient/DataRecipient";
+import InfoUserRecipient from "./InfoUserRecipient/InfoUserRecipient";
 
 const MessageRecipient = (props) => {
   return (
@@ -18,10 +18,10 @@ const MessageUser = (props) => {
   );
 };
 
-const MessageField = ({ dataDialog }) => {
+const MessageField = (props) => {
   return (
     <div>
-      <DataRecipient dataDialog={dataDialog} />
+      <InfoUserRecipient usersInfo={props.usersInfo} />
       <div className={s.dialogMessages}>
         <MessageUser message="Дарова" />
         <MessageRecipient message="Привет" />

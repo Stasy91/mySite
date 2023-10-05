@@ -4,21 +4,21 @@ import Search from "../../components/Kit/Search/Search";
 import DiaolgsItem from "./DiaolgsItem/DiaolgsItem";
 import MessageFild from "./MessageField/MessageField";
 
-const Dialogs = ({ dataDialog = [] }) => (
+const Dialogs = (props) => (
   <div className={s.dialogPage}>
     <div className={s.linkList}>
       <div className={s.serchModule}>
         <Search />
       </div>
-      {dataDialog.map((di) => (
+      {props.usersInfo.map((u) => (
         <DiaolgsItem
-          to={`/dialogs/${di.id}`}
-          src={di.src}
-          name={di.name}
+          to={`/dialogs/${u.id}`}
+          src={u.src}
+          name={u.name}
         ></DiaolgsItem>
       ))}
     </div>
-    <MessageFild dataDialog={dataDialog} />
+    <MessageFild usersInfo={props.usersInfo} />
   </div>
 );
 

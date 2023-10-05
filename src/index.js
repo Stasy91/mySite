@@ -3,12 +3,11 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import POSTS_DATA from "./stores/POSTS_DATA/POSTS_DATA";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App posts={POSTS_DATA} />
+    <App />
   </React.StrictMode>
 );
 
