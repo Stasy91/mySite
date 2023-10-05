@@ -18,6 +18,7 @@ const Dialogs = (props) => (
         ></DiaolgsItem>
       ))}
     </div>
+
     <MessageFild usersInfo={props.usersInfo} />
   </div>
 );
