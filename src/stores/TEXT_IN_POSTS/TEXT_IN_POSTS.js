@@ -1,4 +1,4 @@
-const POSTS_DATA = [
+const TEXT_IN_POSTS = [
   {
     textInPost:
       "Разнообразный и богатый опыт сложившаяся структура организации позволяет выполнять важные задания по разработке дальнейших направлений развития.",
@@ -9,4 +9,4 @@ const POSTS_DATA = [
   },
 ];
 
-export default POSTS_DATA;
+export default TEXT_IN_POSTS;
