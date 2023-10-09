@@ -4,6 +4,7 @@ import Post from "./Post/Post";
 import PinnedPost from "./PinnedPost/PinnedPost";
 
 const Profile = (props) => {
+  console.log(props);
   return (
     <div>
       <PinnedPost profileInfo={props.profileInfo} />
@@ -15,5 +16,3 @@ const Profile = (props) => {
   );
 };
 export default Profile;
-
-let props = { posts: [], profileInfo: {} };

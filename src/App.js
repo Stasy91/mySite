@@ -5,30 +5,30 @@ import NavList from "./components/NavList/NavList";
 import Profile from "./Pages/Profile/Profile";
 import Dialogs from "./Pages/Dialogs/Dialogs";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import USERS_INFO from "./stores/USERS_INFO/USERS_INFO";
-import PROFILE_INFO from "./stores/PROFILE_INFO/PROFILE_INFO";
-import POSTS_DATA from "./stores/POSTS_DATA/POSTS_DATA";
 
-const App = () => {
+const App = (props) => {
   return (
     <BrowserRouter>
       <div className={s.appwrapper}>
         <Header />
-        <NavList profileInfo={PROFILE_INFO} />
+        <NavList profileInfo={props.state.profileInfo} />
         <div className={s.appwrapper_content}>
           <Routes>
             <Route
               path="/dialogs/:id"
-              element={<Dialogs usersInfo={USERS_INFO} />}
+              element={<Dialogs usersInfo={props.state.usersInfo} />}
             />
             <Route
               path="/dialogs/"
-              element={<Dialogs usersInfo={USERS_INFO} />}
+              element={<Dialogs usersInfo={props.state.usersInfo} />}
             />
             <Route
               path="/profile"
               element={
-                <Profile posts={POSTS_DATA} profileInfo={PROFILE_INFO} />
+                <Profile
+                  posts={props.state.profilePage.posts}
+                  profileInfo={props.state.profileInfo}
+                />
               }
             />
           </Routes>
