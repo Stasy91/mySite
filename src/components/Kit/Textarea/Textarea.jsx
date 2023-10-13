@@ -1,10 +1,16 @@
 import React from "react";
 import s from "./Textarea.module.css";
 
-const Textarea = () => {
+const Textarea = (props) => {
   return (
     <div className={s.text_item}>
-      <textarea>Я хочу рассказать вам</textarea>
+      <textarea
+        value={props.value}
+        onChange={(e) => {
+          const newValue = e.target.value;
+          props.changeValue(newValue);
+        }}
+      ></textarea>
     </div>
   );
 };
