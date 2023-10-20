@@ -1,7 +1,7 @@
 import React from "react";
 import s from "./Textarea.module.css";
 
-const Textarea = (props) => {
+const Textarea = (props = { value: "", changeValue: () => {} }) => {
   return (
     <div className={s.text_item}>
       <textarea

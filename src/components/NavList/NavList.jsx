@@ -11,7 +11,6 @@ const NavItem = [
 ];
 
 const NavList = (props) => {
-  console.log({ props });
   return (
     <nav className={s.navlist}>
       <div className={s.designBar}>
