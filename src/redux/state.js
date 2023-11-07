@@ -1,5 +1,3 @@
-import renderEntireTree from "../render";
-
 let state = {
   profileInfo: {
     id: 0,
@@ -52,13 +50,8 @@ let state = {
           "Не следует, однако забывать, что консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании существенных финансовых и административных условий.",
       },
     ],
+    newTextPost: "",
   },
-};
-
-export let addPost = (postMessage) => {
-  let newpost = { id: 3, textInPost: postMessage };
-  state.profilePage.posts.push(newpost);
-  renderEntireTree(state);
 };
 
 export default state;
