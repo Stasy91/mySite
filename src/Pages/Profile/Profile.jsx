@@ -8,9 +8,13 @@ const Profile = (props) => {
   return (
     <div>
       <PinnedPost profileInfo={props.profileInfo} />
-      <NewPost profileInfo={props.profileInfo} />
+      <NewPost profileInfo={props.profileInfo} addPost={props.addPost} />
       {props.posts.map((p) => (
-        <Post text={p.textInPost} profileInfo={props.profileInfo}></Post>
+        <Post
+          text={p.textInPost}
+          profileInfo={props.profileInfo}
+          addPost={props.addPost}
+        ></Post>
       ))}
     </div>
   );

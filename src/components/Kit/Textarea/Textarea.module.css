@@ -1,11 +1,10 @@
 .text_item textarea {
     display: block;
     margin-left: 70px;
-    width: 255%;
     padding: 0.375rem 0.75rem;
     font-size: 1rem;
     font-weight: 400;
-
+    font-family: 'Manrope';
     line-height: 1.5;
     color: #878787;
     background-color: #f6f6f6;

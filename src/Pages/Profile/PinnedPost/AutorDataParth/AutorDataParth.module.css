@@ -2,7 +2,6 @@
     position: relative;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     padding: 10px 0;
     display: flex;
     text-align: center;
@@ -31,4 +30,8 @@
 .iconDesign {   
     fill: #c8c8c8;
     margin-top: 10px;
+}
+
+.counterLikes{
+    margin-top: 100%;
 }
