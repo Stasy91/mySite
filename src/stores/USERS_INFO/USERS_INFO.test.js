@@ -1,7 +1,6 @@
 import DIALOG_DATA, { GetDialogById } from "./DIALOG_DATA";
 
 test("should first", () => {
-  //   console.log(DIALOG_DATA[1]);
   //   expect(1).toBe(2);
   const user = GetDialogById(5);
   expect(user).toStrictEqual({

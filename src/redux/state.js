@@ -1,4 +1,6 @@
-import renderEntireTree from "../render";
+let renderEntireTree = () => {
+  console.log("change state");
+};
 
 let state = {
   profileInfo: {
@@ -52,13 +54,24 @@ let state = {
           "Не следует, однако забывать, что консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании существенных финансовых и административных условий.",
       },
     ],
+    newTextPost: "",
   },
 };
 
-export let addPost = (postMessage) => {
+export const addPost = (postMessage) => {
   let newpost = { id: 3, textInPost: postMessage };
   state.profilePage.posts.push(newpost);
+  state.profilePage.newTextPost = "";
   renderEntireTree(state);
+};
+
+export const updateNewPostText = (value) => {
+  state.profilePage.newTextPost = value;
+  renderEntireTree(state);
+};
+
+export const subscribe = (obsever) => {
+  renderEntireTree = obsever;
 };
 
 export default state;

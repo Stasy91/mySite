@@ -1,24 +1,23 @@
-import React, { useState } from "react";
 import s from "./NewPost.module.css";
 import Textarea from "../../../components/Kit/Textarea/Textarea";
 import Button from "../../../components/Kit/Button/Button";
 
 const NewPost = (props) => {
   let addPost = () => {
-    props.addPost(value);
+    props.addPost(props.newTextPost);
   };
 
-  const [value, setValue] = useState("");
   return (
     <div className={s.postBox}>
       <div className={s.postTitle}>Новый пост</div>
       <div className={s.post_item}>
         <img src={props.profileInfo.src} alt=""></img>
-        {/* <textarea ref={newPostElement}></textarea> */}
         <Textarea
-          value={value}
-          changeValue={setValue}
-          placeholder="Я вам расскажу о..."
+          placeholder="Расскажи о"
+          value={props.newTextPost}
+          changeValue={(text) => {
+            props.updateNewPostText(text);
+          }}
         ></Textarea>
       </div>
       <div className={s.postFutter}>
