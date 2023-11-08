@@ -1,10 +1,9 @@
-<<<<<<< HEAD
+
 let renderEntireTree = () => {
   console.log("change state");
 };
 
-=======
->>>>>>> parent of 84b214d... Merge pull request #11 from Stasy91/31-onClick-ref-VirtualDOM
+
 let state = {
   profileInfo: {
     id: 0,
@@ -59,7 +58,7 @@ let state = {
   },
 };
 
-<<<<<<< HEAD
+
 export const addPost = (postMessage) => {
   let newpost = { id: 3, textInPost: postMessage };
   state.profilePage.posts.push(newpost);
@@ -76,6 +75,6 @@ export const subscribe = (obsever) => {
   renderEntireTree = obsever;
 };
 
-=======
->>>>>>> parent of 84b214d... Merge pull request #11 from Stasy91/31-onClick-ref-VirtualDOM
+
+
 export default state;
