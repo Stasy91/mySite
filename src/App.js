@@ -28,9 +28,12 @@ const App = (props) => {
                 <Profile
                   posts={props.state.profilePage.posts}
                   profileInfo={props.state.profileInfo}
+<<<<<<< HEAD
                   addPost={props.addPost}
                   updateNewPostText={props.updateNewPostText}
                   newTextPost={props.state.profilePage.newTextPost}
+=======
+>>>>>>> parent of 84b214d... Merge pull request #11 from Stasy91/31-onClick-ref-VirtualDOM
                 />
               }
             />

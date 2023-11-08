@@ -1,7 +1,10 @@
+<<<<<<< HEAD
 let renderEntireTree = () => {
   console.log("change state");
 };
 
+=======
+>>>>>>> parent of 84b214d... Merge pull request #11 from Stasy91/31-onClick-ref-VirtualDOM
 let state = {
   profileInfo: {
     id: 0,
@@ -44,12 +47,10 @@ let state = {
   profilePage: {
     posts: [
       {
-        id: 1,
         textInPost:
           "Разнообразный и богатый опыт сложившаяся структура организации позволяет выполнять важные задания по разработке дальнейших направлений развития.",
       },
       {
-        id: 2,
         textInPost:
           "Не следует, однако забывать, что консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании существенных финансовых и административных условий.",
       },
@@ -58,6 +59,7 @@ let state = {
   },
 };
 
+<<<<<<< HEAD
 export const addPost = (postMessage) => {
   let newpost = { id: 3, textInPost: postMessage };
   state.profilePage.posts.push(newpost);
@@ -74,4 +76,6 @@ export const subscribe = (obsever) => {
   renderEntireTree = obsever;
 };
 
+=======
+>>>>>>> parent of 84b214d... Merge pull request #11 from Stasy91/31-onClick-ref-VirtualDOM
 export default state;

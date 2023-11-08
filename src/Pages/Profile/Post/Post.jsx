@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import s from "./Post.module.css";
-import CouterLike from "../CouterLike/CouterLike";
+import CouterLike from "./CouterLike/CouterLike";
 import Like from "../../../components/Kit/Like/Like";
 
 const Post = (props) => {

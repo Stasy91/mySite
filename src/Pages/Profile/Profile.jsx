@@ -7,18 +7,18 @@ const Profile = (props) => {
   return (
     <div>
       <PinnedPost profileInfo={props.profileInfo} />
+<<<<<<< HEAD
       <NewPost
         profileInfo={props.profileInfo}
         addPost={props.addPost}
         updateNewPostText={props.updateNewPostText}
         newTextPost={props.newTextPost}
       />
+=======
+      <NewPost profileInfo={props.profileInfo} />
+>>>>>>> parent of 84b214d... Merge pull request #11 from Stasy91/31-onClick-ref-VirtualDOM
       {props.posts.map((p) => (
-        <Post
-          text={p.textInPost}
-          profileInfo={props.profileInfo}
-          addPost={props.addPost}
-        ></Post>
+        <Post text={p.textInPost} profileInfo={props.profileInfo}></Post>
       ))}
     </div>
   );
